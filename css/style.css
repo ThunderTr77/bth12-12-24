@@ -1,3 +1,4 @@
+/* Đặt nền và cấu hình cơ bản */
 html,
 body {
   margin: 0;
@@ -5,92 +6,122 @@ body {
   font-family: Arial, sans-serif;
   background: url("../images/bg.jpg") no-repeat center center fixed;
   background-size: cover;
-  position: relative;
+  color: white;
 }
 
+/* Header */
 header {
   text-align: center;
-  padding: 1vh 20px;
+  padding: 5vh 5vw; /* Dùng đơn vị linh hoạt */
   background: rgba(0, 0, 0, 0.5);
   color: white;
 }
+
 header h1 {
-  font-size: 3.5em;
-  margin-bottom: 10px;
-}
-header p {
-  font-size: 1.5em;
+  font-size: 4vw; /* Kích thước chữ linh hoạt theo chiều rộng màn hình */
+  margin-bottom: 2vh;
 }
 
+header p {
+  font-size: 2vw; /* Kích thước chữ linh hoạt */
+}
+
+/* Menu */
 .menu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 5vh;
   width: 100%;
-  gap: 50px;
+  gap: 5vw;
 }
 
 .menu-item,
-.menu-item1 {
+.menu-item1,
+.menu-item2 {
   text-align: center;
-}
-.menu-item a {
-  display: block;
-  width: 12vw;
-  height: 12vw;
-  background: url("../images/ght.gif") no-repeat center center;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  font-size: 1.5vw;
-  font-weight: bold;
-  text-align: center;
-  line-height: 12vw;
-}
-.menu-item1 a {
-  display: block;
-  width: 12vw;
-  height: 12vw;
-  background: url("../images/ggt.gif") no-repeat center center;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  font-size: 1.5vw;
-  font-weight: bold;
-  text-align: center;
-  line-height: 12vw;
 }
 
+.menu-item a,
+.menu-item1 a,
+.menu-item2 a {
+  display: block;
+  width: 15vw; /* Đơn vị linh hoạt */
+  height: 15vw; /* Đơn vị linh hoạt */
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 apx 8px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-size: 1.5vw; /* Kích thước chữ linh hoạt */
+  font-weight: bold;
+  text-align: center;
+  line-height: 15vw; /* Đảm bảo chữ nằm giữa */
+}
+
+.menu-item a {
+  background: url("../images/ght.gif") no-repeat center center;
+}
+
+.menu-item1 a {
+  background: url("../images/ggt.gif") no-repeat center center;
+}
+
+.menu-item2 a {
+  background: url("../images/ot.gif") no-repeat center center;
+}
 .content {
   text-align: center;
-  margin: 50px auto;
-  padding: 20px;
+  margin: 5vh auto;
+  padding: 5vh 5vw; /* Thêm khoảng cách theo viewport */
   color: white;
   background: rgba(0, 0, 0, 0.5);
-  max-width: 800px;
-  border-radius: 10px;
+  max-width: 80vw;
+  border-radius: 1vw; /* Bo góc nhẹ nhàng */
 }
+
+.content h2 {
+  font-size: 2.5vw; /* Kích thước chữ linh hoạt */
+}
+
+.content p {
+  font-size: 1.5vw; /* Kích thước chữ linh hoạt */
+}
+
+/* Responsive */
 @media screen and (max-width: 768px) {
   header h1 {
-    font-size: 2em;
+    font-size: 5vw;
   }
 
   header p {
-    font-size: 1em;
+    font-size: 3vw;
   }
 
   .menu {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column; /* Menu xếp dọc khi màn hình nhỏ */
+    gap: 3vw;
     align-items: center;
   }
 
   .menu-item a,
-  .menu-item1 a {
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    font-size: 1em;
+  .menu-item1 a,
+  .menu-item2 a {
+    width: 20vw;
+    height: 20vw;
+    line-height: 20vw; /* Điều chỉnh theo viewport */
+    font-size: 3vw; /* Chữ to hơn trên màn hình nhỏ */
+  }
+
+  .content {
+    padding: 5vh 10vw; /* Điều chỉnh lề trên màn hình nhỏ */
+  }
+
+  .content h2 {
+    font-size: 3vw;
+  }
+
+  .content p {
+    font-size: 2vw;
   }
 }
