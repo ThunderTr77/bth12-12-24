@@ -1,4 +1,4 @@
-/* Đặt nền và cấu hình cơ bản */
+
 html,
 body {
   margin: 0;
@@ -9,24 +9,23 @@ body {
   color: white;
 }
 
-/* Header */
+
 header {
   text-align: center;
-  padding: 5vh 5vw; /* Dùng đơn vị linh hoạt */
+  padding: 5vh 5vw;
   background: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
 header h1 {
-  font-size: 4vw; /* Kích thước chữ linh hoạt theo chiều rộng màn hình */
+  font-size: 4vw;
   margin-bottom: 2vh;
 }
 
 header p {
-  font-size: 2vw; /* Kích thước chữ linh hoạt */
+  font-size: 2vw; 
 }
 
-/* Menu */
 .menu {
   display: flex;
   justify-content: space-evenly;
@@ -46,18 +45,19 @@ header p {
 .menu-item1 a,
 .menu-item2 a {
   display: block;
-  width: 15vw; /* Đơn vị linh hoạt */
-  height: 15vw; /* Đơn vị linh hoạt */
+  width: 14vw; 
+  height: 14vw; 
   background-size: cover;
   background-position: center;
   border-radius: 50%;
   box-shadow: 0 apx 8px rgba(0, 0, 0, 0.5);
   text-decoration: none;
-  font-size: 1.5vw; /* Kích thước chữ linh hoạt */
+  font-size: 1.5vw; 
   font-weight: bold;
   text-align: center;
-  line-height: 15vw; /* Đảm bảo chữ nằm giữa */
+  line-height: 15vw; 
 }
+
 
 .menu-item a {
   background: url("../images/ght.gif") no-repeat center center;
@@ -73,22 +73,20 @@ header p {
 .content {
   text-align: center;
   margin: 5vh auto;
-  padding: 5vh 5vw; /* Thêm khoảng cách theo viewport */
+  padding: 5vh 5vw; 
   color: white;
   background: rgba(0, 0, 0, 0.5);
   max-width: 80vw;
-  border-radius: 1vw; /* Bo góc nhẹ nhàng */
+  border-radius: 1vw; 
 }
 
 .content h2 {
-  font-size: 2.5vw; /* Kích thước chữ linh hoạt */
-}
+  font-size: 2.5vw; 
 
 .content p {
-  font-size: 1.5vw; /* Kích thước chữ linh hoạt */
+  font-size: 1.5vw; 
 }
 
-/* Responsive */
 @media screen and (max-width: 768px) {
   header h1 {
     font-size: 5vw;
@@ -99,7 +97,7 @@ header p {
   }
 
   .menu {
-    flex-direction: column; /* Menu xếp dọc khi màn hình nhỏ */
+    flex-direction: column; 
     gap: 3vw;
     align-items: center;
   }
@@ -109,12 +107,12 @@ header p {
   .menu-item2 a {
     width: 20vw;
     height: 20vw;
-    line-height: 20vw; /* Điều chỉnh theo viewport */
-    font-size: 3vw; /* Chữ to hơn trên màn hình nhỏ */
+    line-height: 20vw; 
+    font-size: 3vw; 
   }
 
   .content {
-    padding: 5vh 10vw; /* Điều chỉnh lề trên màn hình nhỏ */
+    padding: 5vh 10vw; 
   }
 
   .content h2 {

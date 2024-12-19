@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ôn Tập Bài 9-10-11</title>
+    <link rel="stylesheet" href="../css/9-11.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ôn Tập Bài 9-10-11</h1>
+      <p>Học tập và ôn tập kiến thức</p>
+    </header>
+
+    <nav class="menu">
+      <a href="#bai9">Bài 9: Tạo Danh Sách, Bảng</a>
+      <a href="#bai10">Bài 10: Tạo Liên Kết</a>
+      <a href="#bai11">Bài 11: Chèn Tệp Tin Đa Phương Tiện</a>
+    </nav>
+
+    <main>
+      <section id="bai9">
+        <h1>Bài 9: Tạo Danh Sách và Bảng</h1>
+
+        <h2>1. Tạo Danh Sách</h2>
+
+        <h3>a. Danh sách có hoặc không có thứ tự</h3>
+        <p>
+          Mục hiển thị tuần tự, kí tự đầu dòng có thể là một số, chữ, dấu, kí
+          hiệu hoặc hình ảnh.
+        </p>
+        <img src="../images/ot1.jpg" alt="ot1" />
+
+        <h4>Danh sách có thứ tự</h4>
+        <p>
+          Sử dụng cặp thẻ <code>&lt;ol&gt;&lt;/ol&gt;</code> để chọn kiểu đánh
+          thứ tự và giá trị bắt đầu. Sử dụng hai thuộc tính sau:
+        </p>
+        <ul>
+          <li>
+            <strong>type:</strong> xác định kiểu đánh số. Các kiểu đánh số: "1",
+            "A", "a", "I" và "i".
+          </li>
+          <li>
+            <strong>start:</strong> xác định kiểu giá trị bắt đầu đánh số, nhận
+            giá trị là các số thực.
+          </li>
+        </ul>
+        <img
+          src="../images/ot2.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+
+        <h4>Danh sách không có thứ tự</h4>
+        <p>
+          Sử dụng cặp thẻ <code>&lt;ul&gt;&lt;/ul&gt;</code> để chọn kiểu đánh
+          không thứ tự và giá trị bắt đầu. Sử dụng hai thuộc tính
+          <code>style</code> với giá trị của đặc tính
+          <code>list-style-type</code>, các giá trị đi kèm là <code>disc</code>,
+          <code>circle</code>, <code>square</code> và <code>none</code>.
+        </p>
+
+        <img
+          src="../images/ot3.jpg"
+          alt="ot4"
+          style="max-width: 100%; height: auto"
+        />
+
+        <h3>b. Danh sách mô tả</h3>
+        <p>Dùng để liệt kê các mục kèm theo mô tả từng mục.</p>
+        <img
+          src="../images/ot4.jpg"
+          alt="ot4"
+          style="max-width: 100%; height: auto"
+        />
+        <br />
+        <img
+          src="../images/ot5.jpg"
+          alt="ot5"
+          style="max-width: 100%; height: auto"
+        />
+
+        <h2>2. Thiết lập Bảng</h2>
+        <p>
+          Bảng tạo từ các hàng, mỗi hàng gồm các ô dữ liệu. Hàng đầu tiên là
+          hàng tiêu đề của bảng.
+        </p>
+        <p>Các thành phần:</p>
+        <ul>
+          <li><code>&lt;table&gt;</code> - tạo bảng</li>
+          <li><code>&lt;tr&gt;</code> - tạo hàng</li>
+          <li><code>&lt;td&gt;</code> - tạo các ô dữ liệu</li>
+          <li><code>&lt;th&gt;</code> - tạo ô tiêu đề</li>
+        </ul>
+        <img
+          src="../images/ot6.jpg"
+          alt="ot6"
+          style="max-width: 100%; height: auto"
+        />
+
+        <p>
+          Sử dụng thẻ cấu trúc
+          <code>&lt;caption&gt;Tiêu_đề&lt;/caption&gt;</code> ngay sau thẻ
+          <code>&lt;table&gt;</code> và trước thẻ <code>&lt;tr&gt;</code> để
+          thêm tiêu đề cho bảng.
+        </p>
+        <p>
+          Sử dụng cấu trúc thuộc tính<code
+            >border:độ_dày_theo_px kiểu_viền [màu_viền]</code>
+          để tạo khung cho bảng.
+        </p>
+        <img
+          src="../images/ot7.jpg"
+          alt="ot7"
+          style="max-width: 100%; height: auto"
+        />
+
+        <p>
+          Sử dụng thuộc tính <code>rowspan</code> (cho hàng) hoặc
+          <code>colspan</code> (cho cột) để gộp ô.
+        </p>
+        <img
+          src="../images/ot8.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+      </section>
+
+      <section id="bai10">
+        <h1>Bài 10: Tạo Liên Kết</h1>
+
+        <h2>1. Siêu văn bản và đường dẫn</h2>
+        <p>
+          Siêu văn bản (<strong>hypertext</strong>) là loại văn bản mà nội dung
+          của nó chứa nhiều dạng dữ liệu khác như âm thanh, hình ảnh,... và đặc
+          biệt là chứa các siêu liên kết (<strong>hyperlink</strong>) tới siêu
+          văn bản khác.
+        </p>
+        <img
+          src="../images/ot9.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <p>
+          Xem nội dung thông qua truy cập vị trí tương ứng bằng các siêu liên
+          kết không theo trình tự nào.
+        </p>
+        <p>
+          Siêu liên kết (còn gọi tắt là liên kết), là một tham chiếu để liên kết
+          tới siêu văn bản khác. Người dùng có thể dễ dàng truy cập đến văn bản
+          liên kết bằng cách nháy chuột vào vị trí đặt liên kết trong văn bản
+          ban đầu.
+        </p>
+        <h3>Cấu trúc thẻ <code>&lt;a&gt;</code></h3>
+        <ul>
+          <li>
+            <strong>Đường dẫn tuyệt đối:</strong> Cung cấp đầy đủ cả giao thức
+            (<code>http://</code> hoặc <code>https://</code>), tên miền, tên
+            đường dẫn chi tiết nếu cần.
+          </li>
+          <li>
+            <strong>Đường dẫn tương đối:</strong> Mô tả cách truy cập tài liệu
+            được liên kết từ vị trí của tài liệu hiện tại.
+          </li>
+        </ul>
+
+        <h2>2. Các cách liên kết tới một trang web</h2>
+
+        <h3>a. Liên kết tới một trang web khác</h3>
+        <p>
+          Để đặt liên kết tới mục Sách điện tử của bộ sách Kết nối tri thức với
+          cuộc sống trên website của Nhà xuất bản Giáo dục Việt Nam trên trang
+          web của mình, em sử dụng đoạn mã:
+        </p>
+        <img
+          src="../images/ot10.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <p>
+          Kết quả có được là đoạn văn bản đã được liên kết đến trang web
+          Example. Khi nháy chuột vào liên kết, trình duyệt sẽ hiển thị nội dung
+          trang web.
+        </p>
+
+        <h3>b. Liên kết đến một vị trí khác trong cùng website</h3>
+        <p>
+          Trong lập trình web, phần lớn các liên kết được sử dụng là liên kết
+          trỏ tới các trang trong website của mình.
+        </p>
+        <p>
+          Ví dụ, từ trang chủ đi tới các trang nội dung chi tiết. Trường hợp này
+          gọi là liên kết trong. Ta sử dụng đường dẫn tương đối cho thuộc tính
+          href. Khi đường dẫn không có giao thức ở đầu (http:// hoặc https://),
+          trình duyệt kiểm tra địa chỉ đó trên máy chủ hiện tại để tìm tài liệu
+          và liên kết. Tên đường dẫn được sử dụng để xác định tập được liên kết.
+        </p>
+        <img
+          src="../images/ot11.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <p>
+          Sau đây là một số trường hợp liên kết trong website có thể xảy ra.
+        </p>
+        <h3>🔷 Liên kết tới trang web cùng thư mục</h3>
+        <p>Để liên kết tới một tệp trong cùng thư mục:</p>
+        <img
+          src="../images/ot12.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <p>
+          Để liên kết tới một tệp trong cùng thư mục, ta chỉ cần cung cấp tên
+          của tập liên kết tới. Ví dụ tạo liên kết từ trang index.html tới trang
+          thong_tin.html như sau:
+        </p>
+        <img
+          src="../images/ot13.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <h3>🔷 Liên kết tới trang web thuộc thư mục khác, dưới một cấp</h3>
+        <img
+          src="../images/ot14.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <p>
+          Đường dẫn đến trang web khác thư mục, dưới một cấp gồm tên thư mục và
+          tên tệp được phân cách bằng dấu “/”. Ví dụ tạo liên kết từ trang
+          index.html tới trang bai_tap_1.html như sau:
+        </p>
+        <img
+          src="../images/ot15.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <h3>
+          🔷 Liên kết tới trang web thuộc thư mục khác, dưới hai (nhiều) cấp
+        </h3>
+        <img
+          src="../images/ot16.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <p>
+          Đường dẫn gồm tên các thư mục và tên tệp cần được liên kết theo thứ tự
+          từ trên xuống. Mỗi cấp thư mục hoặc tệp tin được phân cách bởi dấu
+          “/”. Ví dụ, tạo liên kết từ trang index.html tới trang
+          bai_tap_on_tap.html như sau:
+        </p>
+        <img
+          src="../images/ot17.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <p>
+          Trong trường hợp trang web liên kết tới nằm ở thư mục mức trên, ta sử
+          dụng các kí tự "../". Khi sử dụng "../" trong đường dẫn, tức là chỉ
+          định “trở lại thư mục trên một mức” của thư mục chứa tệp có liên kết.
+          Số cụm "../" trong đường dẫn tương ứng với số mức quay trở lại thư mục
+          ở mức trên. Ví dụ, đoạn mã html sau chỉ dẫn địa chỉ từ trang
+          bai_tap_1.html trong thư mục bai_tap quay lại trang index.html trong
+          thư mục web, là thư mục mẹ của thư mục bai_tap:
+        </p>
+        <img
+          src="../images/ot18.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <h3>🔷 Liên kết tới vị trí khác trong cùng trang web</h3>
+        <img
+          src="../images/ot19.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <div style="line-height: 0.9;">
+          <p>
+            Ví dụ, khi ở cuối trang muốn di chuyển lên đầu trang. Thực hiện thiết
+            đặt như sau:
+          </p>
+          <p>
+            Bước 1. Tạo phần tử HTML có thuộc tính id nằm tại vị trí được liên kết
+            đến.
+          </p>
+          <p>
+            Bước 2. Tạo liên kết tới phần tử trên. <p>Việc thiết lập thuộc tính id
+            cho thẻ HTML tại vị trí cần liên kết giống như việc bai_tap_1.html cắm
+            cờ trong tài liệu để có thể quay lại dễ dàng.</p>
+          </p>
+          <p>
+            Để là vị trí đích, thuộc tính id cần được đặt tên duy nhất (chỉ xuất
+            hiện duy nhất một lần trong toàn bộ trang web) và được gọi là mã định
+            danh đoạn.
+          </p>
+          <p>
+            Để liên kết tới phần tử vừa tạo, ta thiết lập thuộc tính
+            href="#mã_định_danh_đoạn".
+          </p>
+          <p>
+            Ví dụ, hai câu lệnh dưới đây sẽ tạo một bảng với id là Thong_tin và
+            đặt liên kết tới bảng đó:
+          </p>
+        </div>
+        <img
+          src="../images/ot20.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <h3>🔷 Liên kết cho hình ảnh</h3>
+        <p>Sử dụng thẻ img để hiển thị hình ảnh.</p>
+        <img
+          src="../images/ot21.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <p>Ví dụ, liên tệp có địa chỉ images/sun.png và tạo đường liên kết từ ảnh tới trang thong_tin.html thì đoạn mã có dạng như sau: </p>
+        <img
+          src="../images/ot22.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+      </section>
+
+      <section id="bai11">
+        <h1>Bài 11: Chèn Tệp Tin Đa Phương Tiện và Khung Nội Tuyến</h1>
+
+        <h2>1. Chèn tệp ảnh vào trang web</h2>
+        <p>Sử dụng thẻ đơn <code>&lt;img&gt;</code> để chèn hình ảnh vào nội dung trang web.</p>
+        <p>Tệp ảnh hiển thị cần có định dạng phù hợp với trang web.</p>
+        <img
+          src="../images/ot23.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <p>Với thẻ <code>&lt;img&gt;</code>, trình duyệt sẽ phải tải ảnh lên trước khi hiển thị trên trang web. Dung lượng của tệp hình ảnh lớn sẽ làm việc hiển thị hình ảnh trên trang web gặp khó khăn nếu tốc độ của mạng chậm.</p>
+        <p>Thuộc tính <code>src</code> là bắt buộc, để chỉ đường dẫn tới tệp ảnh. Ngoài ra, thuộc tính <code>alt</code> nên được sử dụng kèm để cung cấp văn bản thay thế khi việc hiển thị ảnh bị lỗi.</p>
+        <pre>
+    &lt;img src="đường dẫn tới tệp tin ảnh" alt="đoạn văn bản thay thế"&gt;
+        </pre>
+        <p>Nên chèn bằng đường dẫn tương đối để tránh trường hợp xảy ra lỗi khi ảnh trên mạng bị thay đổi.</p>
+        <p>🔹Ví dụ, tạo một liên kết từ ảnh pdles.png trong thư mục images tới một tệp có đường dẫn tai_lieu/bieu_mau.pdf có nội dung là biểu mẫu xin nhập học bằng đoạn mã html sau:</p>
+        <img
+          src="../images/ot24.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <p>Sử dụng các thuộc tính điều chỉnh kích thước (tính bằng pixel) là width, height cho thẻ img. Khi sử dụng các thuộc tính này, trình duyệt sẽ giữ đúng không gian trong bố cục khi hình ảnh đang tải giúp hiển thị trang nhanh hơn. Nếu chỉ sử dụng một trong hai thuộc tính, chiều còn lại sẽ được tính toán để hiển thị theo tỉ lệ của ảnh gốc.</p>
+         <p>🔹Ví dụ, kết quả khi chèn ảnh hình cốc cafe coffee.png có chiều rộng 262 pixel, chiều dài 257 pixel với các giá trị thuộc tính khác nhau.
+          </p>
+          <img
+          src="../images/ot25.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <h2>2. Chèn âm thanh và video</h2>
+        <p>Để chèn video hoặc âm thanh vào trang web, ta sử dụng thẻ <code>&lt;video&gt;</code> và <code>&lt;audio&gt;</code>được hỗ trợ trong hầu hết các trình duyệt, định dạng của các tập tin đa phương tiện có thể sử dụng vẫn phụ thuộc vào trình duyệt.</p>    
+        <p>Hai định dạng tệp video phổ biến nhất là mp4 và webm. Định dạng mp4 chạy được trực tiếp trên hầu hết các trình duyệt.</p>
+        <p>Ba định dạng tệp âm thanh phổ biến được hỗ trợ bởi hầu hết trình duyệt hiện tại là mp3, wav và ogg.</p>
+        <p>Để chèn tệp video hay âm thanh vào trang web, ta sử dụng thẻ <code>&lt;video&gt;</code> hoặc <code>&lt;adio&gt;</code>:</p>
+        <pre>&lt;video[audio] thuộc_tính="giá_trị_thuộc_tính"&gt;&lt;/video[audio]&gt;</pre>
+        <ul>
+            <li><code>controls</code>: là thuộc tính boolean, không cần có giá trị, để trình duyệt hiển thị các thành phần điều khiển như nút phát/tạm dừng, điều khiển âm lượng,...</li>
+            <li><code>autoplay</code>: là thuộc tính boolean, không cần có giá trị, cho phép trình duyệt chạy video ngay khi hiển thị.</li>
+            <li><code>poster</code>: cung cấp đường dẫn đến tệp ảnh, dùng để hiển thị khi chưa chạy video.</li>
+        </ul>
+    
+        <p>Sử dụng thẻ <code>&lt;sources&gt;</code> trong cặp thẻ <code>&lt;video&gt;</code> hay <code>&lt;audio&gt;</code> để chỉ định các loại định dạng khác nhau. Trình duyệt sẽ tự động tìm và hiển thị tệp tin với định dạng mà nó hỗ trợ.</p>
+        <h2>3. Tạo khung nội tuyến trong trang web</h2>
+        <p>Khung nội tuyến là một khung nhìn chứa tài nguyên web khác trong trang web hiện tại.</p>
+        <p>Sử dụng thẻ <code>&lt;iframe&gt;</code> (viết tắt của inline frame – khung nội tuyến). Ví dụ, khi cần chèn nội dung từ YouTube hoặc bản đồ từ Google Maps vào trang web của mình, các nền tảng đều cung cấp cho ta một đoạn mã sử dụng iframe (công cụ tiêu chuẩn để chèn các nội dung quảng cáo) để ta sao chép và dán vào trang web.</p>
+        <p>Các thuộc tính thường dùng của thẻ <code>&lt;iframe&gt;</code> là:
+          src: đường dẫn tới nội dung hiển thị trong khung nội tuyến.
+          width, height: chiều rộng và chiều cao của khung nội tuyến.</p>
+        <p>🔹Ví dụ, tạo một trang web có tên iframe.html và chèn vào một khung nội tuyến có kích thước 600 x 400 pixel. Trong khung nội tuyến ta hiển thị nội dung của trang web CLB.html.
+          Đoạn mã để thực hiện việc này trong tệp iframe.html là:
+          </p>
+          <img
+          src="../images/ot26.jpg"
+          alt="ot2"
+          style="max-width: 100%; height: auto"
+        />
+        <p>Lưu ý: Các phần tử <code>&lt;iframe&gt;</code> thường dùng kết hợp với thẻ <code>&lt;a&gt;</code> để tạo liên kết và hiển thị nội dung bằng cách thêm thuộc tính <code>target</code> cho thẻ <code>&lt;a&gt;</code>.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>©Tổ 4 chúc các bạn học tốt!</p>
+      <a href="../htmll/on-tap-tn.html" class="button">Luyện Tập Ngay</a>
+    </footer>
+  </body>
+</html>

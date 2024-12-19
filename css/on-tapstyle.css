@@ -1,0 +1,133 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("../images/otbg.gif") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 5vh 5vw;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+header h1 {
+  font-size: 4vw;
+  margin-bottom: 2vh;
+}
+
+header p {
+  font-size: 2vw;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15vh;
+  width: 100%;
+  gap: 5vw;
+}
+
+.menu-item,
+.menu-item1,
+.menu-item2,
+.menu-item3 {
+  text-align: center;
+}
+
+.menu-item a,
+.menu-item1 a,
+.menu-item2 a,
+.menu-item3 a {
+  display: block;
+  width: 14vw;
+  height: 14vw;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+  box-shadow: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-align: center;
+  line-height: 15vw;
+}
+
+.menu-item a {
+  background: url("../images/ght.gif") no-repeat center center;
+}
+
+.menu-item1 a {
+  background: url("../images/ggt.gif") no-repeat center center;
+}
+
+.menu-item2 a {
+  background: url("../images/ot.gif") no-repeat center center;
+}
+
+.menu-item3 a {
+  background: url("../images/otv.gif") no-repeat center center;
+}
+
+.content {
+  text-align: center;
+  margin: 5vh auto;
+  padding: 5vh 5vw;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  max-width: 80vw;
+  border-radius: 1vw;
+}
+
+.content h2 {
+  font-size: 2.5vw;
+}
+
+.content p {
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 5vw;
+  }
+
+  header p {
+    font-size: 3vw;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 3vw;
+    align-items: center;
+  }
+
+  .menu-item a,
+  .menu-item1 a,
+  .menu-item2 a,
+  .menu-item3 a {
+    width: 20vw;
+    height: 20vw;
+    line-height: 20vw;
+    font-size: 3vw;
+  }
+
+  .content {
+    padding: 5vh 10vw;
+  }
+
+  .content h2 {
+    font-size: 3vw;
+  }
+
+  .content p {
+    font-size: 2vw;
+  }
+}
