@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu Hỏi và Đáp Án về HTML</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1, h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 20px;
+        }
+        .content {
+            width: 80%;
+            margin: 20px auto;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        ul {
+            padding-left: 40px;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+        .question-container {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .answer {
+            margin-top: 10px;
+            display: none;
+            background-color: #f1f5f9;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Câu Hỏi và Đáp Án về HTML</h1>
+</header>
+
+<div class="content">
+
+    <!-- Câu 1 đến Câu 10 -->
+    <div class="question-container">
+        <h2>Câu 1:</h2>
+        <p>Thẻ HTML được viết trong cặp dấu nào?</p>
+        <ul>
+            <li>A. { }</li>
+            <li>B. [ ]</li>
+            <li>C. ( )</li>
+            <li>D. &lt; &gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer1')">Hiển thị đáp án</button>
+        <div id="answer1" class="answer">
+            Đáp án: D. &lt; &gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 2:</h2>
+        <p>Tên thẻ HTML có phân biệt chữ hoa và chữ thường không?</p>
+        <ul>
+            <li>A. Có, luôn phải viết chữ hoa</li>
+            <li>B. Có, luôn phải viết chữ thường</li>
+            <li>C. Không phân biệt, nhưng thường viết chữ thường</li>
+            <li>D. Không phân biệt, nhưng thường viết chữ hoa</li>
+        </ul>
+        <button onclick="toggleAnswer('answer2')">Hiển thị đáp án</button>
+        <div id="answer2" class="answer">
+            Đáp án: C. Không phân biệt, nhưng thường viết chữ thường
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 3:</h2>
+        <p>Thẻ HTML nào dưới đây là thẻ đơn?</p>
+        <ul>
+            <li>A. &lt;div&gt;</li>
+            <li>B. &lt;img&gt;</li>
+            <li>C. &lt;h1&gt;</li>
+            <li>D. &lt;p&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer3')">Hiển thị đáp án</button>
+        <div id="answer3" class="answer">
+            Đáp án: B. &lt;img&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 4:</h2>
+        <p>Phần tử nào chứa toàn bộ nội dung HTML của trang web?</p>
+        <ul>
+            <li>A. &lt;head&gt;</li>
+            <li>B. &lt;body&gt;</li>
+            <li>C. &lt;html&gt;</li>
+            <li>D. &lt;footer&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer4')">Hiển thị đáp án</button>
+        <div id="answer4" class="answer">
+            Đáp án: C. &lt;html&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 5:</h2>
+        <p>Thẻ nào dùng để đặt tên cho trang web, xuất hiện trong kết quả tìm kiếm?</p>
+        <ul>
+            <li>A. &lt;meta&gt;</li>
+            <li>B. &lt;title&gt;</li>
+            <li>C. &lt;header&gt;</li>
+            <li>D. &lt;script&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer5')">Hiển thị đáp án</button>
+        <div id="answer5" class="answer">
+            Đáp án: B. &lt;title&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 6:</h2>
+        <p>Phần tử HTML nào chứa nội dung hiển thị của trang web?</p>
+        <ul>
+            <li>A. &lt;header&gt;</li>
+            <li>B. &lt;body&gt;</li>
+            <li>C. &lt;main&gt;</li>
+            <li>D. &lt;footer&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer6')">Hiển thị đáp án</button>
+        <div id="answer6" class="answer">
+            Đáp án: B. &lt;body&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 7:</h2>
+        <p>Thẻ nào sau đây dùng để mô tả các thông tin bổ sung như mã hoá và từ khoá?</p>
+        <ul>
+            <li>A. &lt;style&gt;</li>
+            <li>B. &lt;meta&gt;</li>
+            <li>C. &lt;script&gt;</li>
+            <li>D. &lt;link&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer7')">Hiển thị đáp án</button>
+        <div id="answer7" class="answer">
+            Đáp án: B. &lt;meta&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 8:</h2>
+        <p>Thẻ &lt;p&gt; trong HTML dùng để tạo phần tử nào?</p>
+        <ul>
+            <li>A. Tiêu đề</li>
+            <li>B. Đoạn văn bản</li>
+            <li>C. Hình ảnh</li>
+            <li>D. Liên kết</li>
+        </ul>
+        <button onclick="toggleAnswer('answer8')">Hiển thị đáp án</button>
+        <div id="answer8" class="answer">
+            Đáp án: B. Đoạn văn bản
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 9:</h2>
+        <p>Để soạn thảo HTML chuyên nghiệp, người ta có thể sử dụng phần mềm nào sau đây?</p>
+        <ul>
+            <li>A. WordPad</li>
+            <li>B. Notepad++</li>
+            <li>C. Microsoft Word</li>
+            <li>D. Excel</li>
+        </ul>
+        <button onclick="toggleAnswer('answer9')">Hiển thị đáp án</button>
+        <div id="answer9" class="answer">
+            Đáp án: B. Notepad++
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 10:</h2>
+        <p>Thẻ HTML &lt;h1&gt; đến &lt;h6&gt; được sử dụng để?</p>
+        <ul>
+            <li>A. Định dạng văn bản thành tiêu đề</li>
+            <li>B. Chèn hình ảnh</li>
+            <li>C. Tạo liên kết</li>
+            <li>D. Tạo danh sách</li>
+        </ul>
+        <button onclick="toggleAnswer('answer10')">Hiển thị đáp án</button>
+        <div id="answer10" class="answer">
+            Đáp án: A. Định dạng văn bản thành tiêu đề
+        </div>
+    </div>
+
+    <!-- Câu 11 đến Câu 40 -->
+    <div class="question-container">
+        <h2>Câu 11:</h2>
+        <p>Thẻ HTML nào được sử dụng để định dạng tiêu đề chính của một văn bản?</p>
+        <ul>
+            <li>A. &lt;h1&gt;</li>
+            <li>B. &lt;h2&gt;</li>
+            <li>C. &lt;h3&gt;</li>
+            <li>D. &lt;title&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer11')">Hiển thị đáp án</button>
+        <div id="answer11" class="answer">
+            Đáp án: A. &lt;h1&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 12:</h2>
+        <p>Thẻ HTML nào thường được sử dụng để tạo đoạn văn bản?</p>
+        <ul>
+            <li>A. &lt;div&gt;</li>
+            <li>B. &lt;span&gt;</li>
+            <li>C. &lt;p&gt;</li>
+            <li>D. &lt;section&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer12')">Hiển thị đáp án</button>
+        <div id="answer12" class="answer">
+            Đáp án: C. &lt;p&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 13:</h2>
+        <p>Thẻ nào trong HTML được sử dụng để tạo một khối nội dung và bắt đầu trên dòng mới?</p>
+        <ul>
+            <li>A. &lt;span&gt;</li>
+            <li>B. &lt;div&gt;</li>
+            <li>C. &lt;section&gt;</li>
+            <li>D. &lt;p&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer13')">Hiển thị đáp án</button>
+        <div id="answer13" class="answer">
+            Đáp án: B. &lt;div&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 14:</h2>
+        <p>Thẻ nào trong HTML không được hỗ trợ để tạo kiểu chữ lớn hơn?</p>
+        <ul>
+            <li>A. &lt;big&gt;</li>
+            <li>B. &lt;u&gt;</li>
+            <li>C. &lt;strong&gt;</li>
+            <li>D. &lt;em&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer14')">Hiển thị đáp án</button>
+        <div id="answer14" class="answer">
+            Đáp án: B. &lt;u&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 15:</h2>
+        <p>Thuộc tính nào được sử dụng để thay đổi màu sắc của phông chữ trong HTML?</p>
+        <ul>
+            <li>A. color</li>
+            <li>B. font-family</li>
+            <li>C. font-size</li>
+            <li>D. style</li>
+        </ul>
+        <button onclick="toggleAnswer('answer15')">Hiển thị đáp án</button>
+        <div id="answer15" class="answer">
+            Đáp án: A. color
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 16:</h2>
+        <p>Để thay đổi kiểu phông chữ trong một đoạn văn bản HTML, thuộc tính nào được sử dụng?</p>
+        <ul>
+            <li>A. color</li>
+            <li>B. font-family</li>
+            <li>C. font-size</li>
+            <li>D. text-align</li>
+        </ul>
+        <button onclick="toggleAnswer('answer16')">Hiển thị đáp án</button>
+        <div id="answer16" class="answer">
+            Đáp án: B. font-family
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 17:</h2>
+        <p>Thẻ nào được sử dụng để tạo dòng kẻ ngang trên trang web?</p>
+        <ul>
+            <li>A. &lt;br&gt;</li>
+            <li>B. &lt;hr&gt;</li>
+            <li>C. &lt;line&gt;</li>
+            <li>D. &lt;span&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer17')">Hiển thị đáp án</button>
+        <div id="answer17" class="answer">
+            Đáp án: B. &lt;hr&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 18:</h2>
+        <p>Để viết số mũ trong HTML, thẻ nào được sử dụng?</p>
+        <ul>
+            <li>A. &lt;sub&gt;</li>
+            <li>B. &lt;sup&gt;</li>
+            <li>C. &lt;s&gt;</li>
+            <li>D. &lt;b&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer18')">Hiển thị đáp án</button>
+        <div id="answer18" class="answer">
+            Đáp án: B. &lt;sup&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 19:</h2>
+        <p>Trong HTML, thẻ nào được sử dụng để in đậm văn bản?</p>
+        <ul>
+            <li>A. &lt;em&gt;</li>
+            <li>B. &lt;i&gt;</li>
+            <li>C. &lt;strong&gt;</li>
+            <li>D. &lt;mark&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer19')">Hiển thị đáp án</button>
+        <div id="answer19" class="answer">
+            Đáp án: C. &lt;strong&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 20:</h2>
+        <p>Để xuống dòng trong HTML mà không tạo đoạn mới, thẻ nào được sử dụng?</p>
+        <ul>
+            <li>A. &lt;div&gt;</li>
+            <li>B. &lt;p&gt;</li>
+            <li>C. &lt;br&gt;</li>
+            <li>D. &lt;hr&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer20')">Hiển thị đáp án</button>
+        <div id="answer20" class="answer">
+            Đáp án: C. &lt;br&gt;
+        </div>
+    </div>
+
+    <!-- Tiếp tục với câu 21 đến 40 -->
+    <div class="question-container">
+        <h2>Câu 21:</h2>
+        <p>Trên trang HTML, giá trị màu sắc được sử dụng theo giá trị trong hệ màu nào?</p>
+        <ul>
+            <li>A. RBG</li>
+            <li>B. CMYK</li>
+            <li>C. RGB</li>
+            <li>D. RYB</li>
+        </ul>
+        <button onclick="toggleAnswer('answer21')">Hiển thị đáp án</button>
+        <div id="answer21" class="answer">
+            Đáp án: C. RGB
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 22:</h2>
+        <p>Khi muốn thực hiện nhiều định dạng phông đồng thời, em ngăn cách các cặp tên:giá trị trong phần giá trị của thuộc tính bằng dấu gì?</p>
+        <ul>
+            <li>A. Dấu ";".</li>
+            <li>B. Dấu ",".</li>
+            <li>C. Dấu ".".</li>
+            <li>D. Dấu cách.</li>
+        </ul>
+        <button onclick="toggleAnswer('answer22')">Hiển thị đáp án</button>
+        <div id="answer22" class="answer">
+            Đáp án: A. Dấu ";"
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 23:</h2>
+        <p>HTML5 không hỗ trợ thẻ nào sau đây?</p>
+        <ul>
+            <li>A. &lt;em&gt;.</li>
+            <li>B. &lt;u&gt;.</li>
+            <li>C. &lt;strong&gt;.</li>
+            <li>D. &lt;del&gt;.</li>
+        </ul>
+        <button onclick="toggleAnswer('answer23')">Hiển thị đáp án</button>
+        <div id="answer23" class="answer">
+            Đáp án: B. &lt;u&gt;
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Câu 24:</h2>
+        <p>Phát biểu nào sau đây đúng?</p>
+        <ul>
+            <li>A. Thẻ &lt;hr&gt; dùng để xuống dòng trên trang web.</li>
+            <li>B. Tiêu đề văn bản được định dạng bởi thẻ &lt;hx&gt; với 7 mức tiêu đề từ &lt;h1&gt; đến &lt;h7&gt;.</li>
+            <li>C. Cặp thẻ &lt;div&gt;…&lt;/div&gt; hay &lt;span&gt;…&lt;/span&gt; tạo một khối chứa nội dung bất kì đặt ở giữa hai thẻ.</li>
+            <li>D. Mỗi thẻ HTML đều phải có thuộc tính.</li>
+        </ul>
+        <button onclick="toggleAnswer('answer24')">Hiển thị đáp án</button>
+        <div id="answer24" class="answer">
+            Đáp án: C. Cặp thẻ &lt;div&gt;…&lt;/div&gt; hay &lt;span&gt;…&lt;/span&gt; tạo một khối chứa nội dung bất kì đặt ở giữa hai thẻ.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 25:</h2>
+        <p>Đoạn mã HTML để hiển thị công thức là gì?</p>
+        <ul>
+            <li>A. &lt;p&gt;H&lt;sup&gt;2&lt;/sup&gt;SO&lt;sup&gt;4&lt;/sup&gt;&lt;/p&gt;</li>
+            <li>B. &lt;p&gt;H&lt;small&gt;2&lt;/small&gt;SO&lt;small&gt;4&lt;/small&gt;&lt;/p&gt;</li>
+            <li>C. &lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;SO&lt;sub&gt;4&lt;/sub&gt;&lt;/p&gt;</li>
+            <li>D. &lt;p&gt;H&lt;down&gt;2&lt;/down&gt;SO&lt;down&gt;4&lt;/down&gt;&lt;/p&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer25')">Hiển thị đáp án</button>
+        <div id="answer25" class="answer">
+            Đáp án: C. &lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;SO&lt;sub&gt;4&lt;/sub&gt;&lt;/p&gt;
+        </div>
+    </div>
+    
+    
+    <div class="question-container">
+        <h2>Câu 26:</h2>
+        <p>Để tạo danh sách có thứ tự, chúng ta sử dụng thẻ nào trong HTML?</p>
+        <ul>
+            <li>A. &lt;ul&gt;</li>
+            <li>B. &lt;ol&gt;</li>
+            <li>C. &lt;dl&gt;</li>
+            <li>D. &lt;li&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer26')">Hiển thị đáp án</button>
+        <div id="answer26" class="answer">
+            Đáp án: B. &lt;ol&gt;
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 27:</h2>
+        <p>Thuộc tính nào được sử dụng để xác định kiểu đánh số trong danh sách có thứ tự?</p>
+        <ul>
+            <li>A. start</li>
+            <li>B. list-style-type</li>
+            <li>C. type</li>
+            <li>D. order</li>
+        </ul>
+        <button onclick="toggleAnswer('answer27')">Hiển thị đáp án</button>
+        <div id="answer27" class="answer">
+            Đáp án: C. type
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 28:</h2>
+        <p>Để tạo danh sách không có thứ tự, chúng ta sử dụng thẻ nào?</p>
+        <ul>
+            <li>A. &lt;ol&gt;</li>
+            <li>B. &lt;dl&gt;</li>
+            <li>C. &lt;ul&gt;</li>
+            <li>D. &lt;li&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer28')">Hiển thị đáp án</button>
+        <div id="answer28" class="answer">
+            Đáp án: C. &lt;ul&gt;
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 29:</h2>
+        <p>Để thay đổi kí tự đầu dòng trong danh sách không có thứ tự, chúng ta sử dụng thuộc tính nào?</p>
+        <ul>
+            <li>A. type</li>
+            <li>B. list-style-type</li>
+            <li>C. start</li>
+            <li>D. bullet-type</li>
+        </ul>
+        <button onclick="toggleAnswer('answer29')">Hiển thị đáp án</button>
+        <div id="answer29" class="answer">
+            Đáp án: B. list-style-type
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 30:</h2>
+        <p>Thẻ nào được sử dụng để tạo danh sách mô tả?</p>
+        <ul>
+            <li>A. &lt;ul&gt;</li>
+            <li>B. &lt;ol&gt;</li>
+            <li>C. &lt;dl&gt;</li>
+            <li>D. &lt;li&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer30')">Hiển thị đáp án</button>
+        <div id="answer30" class="answer">
+            Đáp án: C. &lt;dl&gt;
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 31:</h2>
+        <p>Trong cấu trúc danh sách mô tả, thẻ &lt;dt&gt; có chức năng gì?</p>
+        <ul>
+            <li>A. Định nghĩa từ khóa</li>
+            <li>B. Định nghĩa mô tả</li>
+            <li>C. Tạo mục không có thứ tự</li>
+            <li>D. Tạo mục có thứ tự</li>
+        </ul>
+        <button onclick="toggleAnswer('answer31')">Hiển thị đáp án</button>
+        <div id="answer31" class="answer">
+            Đáp án: A. Định nghĩa từ khóa
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 32:</h2>
+        <p>Thuộc tính nào được sử dụng để thêm tiêu đề cho bảng trong HTML?</p>
+        <ul>
+            <li>A. &lt;caption&gt;</li>
+            <li>B. &lt;title&gt;</li>
+            <li>C. &lt;header&gt;</li>
+            <li>D. &lt;thead&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer32')">Hiển thị đáp án</button>
+        <div id="answer32" class="answer">
+            Đáp án: A. &lt;caption&gt;
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 33:</h2>
+        <p>Để tạo một hàng trong bảng, chúng ta sử dụng thẻ nào?</p>
+        <ul>
+            <li>A. &lt;tr&gt;</li>
+            <li>B. &lt;td&gt;</li>
+            <li>C. &lt;th&gt;</li>
+            <li>D. &lt;table&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer('answer33')">Hiển thị đáp án</button>
+        <div id="answer33" class="answer">
+            Đáp án: A. &lt;tr&gt;
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 34:</h2>
+        <p>Để gộp ô trong một bảng, chúng ta sử dụng thuộc tính nào?</p>
+        <ul>
+            <li>A. colspan và rowspan</li>
+            <li>B. mergecell</li>
+            <li>C. span</li>
+            <li>D. cellmerge</li>
+        </ul>
+        <button onclick="toggleAnswer('answer34')">Hiển thị đáp án</button>
+        <div id="answer34" class="answer">
+            Đáp án: A. colspan và rowspan
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 35:</h2>
+        <p>Thuộc tính nào trong HTML được sử dụng để điều chỉnh kích thước của bảng?</p>
+        <ul>
+            <li>A. width và height</li>
+            <li>B. size và length</li>
+            <li>C. dimension và length</li>
+            <li>D. width và size</li>
+        </ul>
+        <button onclick="toggleAnswer('answer35')">Hiển thị đáp án</button>
+        <div id="answer35" class="answer">
+            Đáp án: A. width và height
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 36:</h2>
+        <p>Để định dạng màu nền cho bảng, em sử dụng thuộc tính nào?</p>
+        <ul>
+            <li>A. background.</li>
+            <li>B. color.</li>
+            <li>C. bgcolor.</li>
+            <li>D. tablecolor.</li>
+        </ul>
+        <button onclick="toggleAnswer('answer36')">Hiển thị đáp án</button>
+        <div id="answer36" class="answer">
+            Đáp án: C. bgcolor.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 37:</h2>
+        <p>Khi định dạng tạo khung bảng, thuộc tính nhỏ độ_dày của thuộc tính con border trong thuộc tính style được đặt theo</p>
+        <ul>
+            <li>A. %.</li>
+            <li>B. px.</li>
+            <li>C. mm.</li>
+            <li>D. pt.</li>
+        </ul>
+        <button onclick="toggleAnswer('answer37')">Hiển thị đáp án</button>
+        <div id="answer37" class="answer">
+            Đáp án: B. px.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 38:</h2>
+        <p>Khi định dạng tạo khung bảng, thuộc tính nhỏ kiểu_viền của thuộc tính con border trong thuộc tính style không nhận giá trị nào sau đây?</p>
+        <ul>
+            <li>A. None.</li>
+            <li>B. Dotted.</li>
+            <li>C. Shadow.</li>
+            <li>D. Solid.</li>
+        </ul>
+        <button onclick="toggleAnswer('answer38')">Hiển thị đáp án</button>
+        <div id="answer38" class="answer">
+            Đáp án: C. Shadow.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 39:</h2>
+        <p>Khi tạo danh sách, thuộc tính type được dùng để làm gì?</p>
+        <ul>
+            <li>A. Xác định giá trị bắt đầu đánh số, nhận giá trị là các số nguyên.</li>
+            <li>B. Xác định kiểu danh sách.</li>
+            <li>C. Xác định kiểu kí tự đầu dòng.</li>
+            <li>D. Xác định kiểu đánh số, các kiểu đánh số là "1", "A", "a", "I" và "i".</li>
+        </ul>
+        <button onclick="toggleAnswer('answer39')">Hiển thị đáp án</button>
+        <div id="answer39" class="answer">
+            Đáp án: D. Xác định kiểu đánh số, các kiểu đánh số là "1", "A", "a", "I" và "i".
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <h2>Câu 40:</h2>
+        <p>Phát biểu nào sau đây đúng?</p>
+        <ul>
+            <li>A. Để thêm tiêu đề cho bảng, ta sử dụng thẻ &lt;caption&gt;, ngay trước thẻ &lt;table&gt;.</li>
+            <li>B. Các dạng danh sách trong HTML cơ bản gồm danh sách có thứ tự và danh sách không có thứ tự.</li>
+            <li>C. Để chọn kí tự đầu dòng, ta thiết lập giá trị của đặc tính list-style-type trong thuộc tính style bằng một trong 4 giá trị disc, circle, square và none.</li>
+            <li>D. Sử dụng thuộc tính con length và height của thuộc tính style để điều chỉnh kích thước của bảng.</li>
+        </ul>
+        <button onclick="toggleAnswer('answer40')">Hiển thị đáp án</button>
+        <div id="answer40" class="answer">
+            Đáp án: C. Để chọn kí tự đầu dòng, ta thiết lập giá trị của đặc tính list-style-type trong thuộc tính style bằng một trong 4 giá trị disc, circle, square và none.
+        </div>
+    </div>
+    
+</div>
+
+
+
+<script>
+    function toggleAnswer(id) {
+        var answerDiv = document.getElementById(id);
+        if (answerDiv.style.display === "none" || answerDiv.style.display === "") {
+            answerDiv.style.display = "block";
+        } else {
+            answerDiv.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

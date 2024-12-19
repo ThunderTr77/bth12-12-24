@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học HTML và Cấu trúc Trang Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #2a5d84;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .note {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 5px solid #2a5d84;
+            margin-bottom: 20px;
+        }
+        .task {
+            background-color: #e7f7f7;
+            padding: 10px;
+            border-left: 5px solid #009688;
+            margin-bottom: 20px;
+        }
+        code {
+            font-family: 'Courier New', monospace;
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+        }
+        pre {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border: 1px solid #ddd;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+        }
+
+        footer .button {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+        }
+
+        footer .button:hover {
+             background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bài 7: HTML và Cấu trúc Trang Web</h1>
+
+    <h2>1. Trang web và HTML</h2>
+    
+    <h3>a) Thẻ đánh dấu HTML</h3>
+    <p>Trang web được thiết lập theo một ngôn ngữ có cấu trúc đặc biệt gọi là ngôn ngữ đánh dấu siêu văn bản HTML. Các thẻ được viết trong cặp dấu “&lt;”, “&gt;”. Thông thường mỗi thẻ bao gồm thẻ bắt đầu và thẻ kết thúc, chỉ ra phạm vi tác dụng của thẻ.</p>
+    <div class="note">
+        <p><strong>Lưu ý:</strong></p>
+        <ul>
+            <li>Tên thẻ HTML không phân biệt chữ hoa, chữ thường nhưng mặc định tên thẻ được viết chữ thường.</li>
+            <li>Các thẻ có thể lồng nhau.</li>
+            <li>Mỗi thẻ có thể đi kèm các thông tin thuộc tính của thẻ.</li>
+            <li>Phần lớn các thẻ đều là thẻ đôi, tức là có thẻ bắt đầu (opening tag) và thẻ kết thúc (closing tag). Vị trí kết thúc thẻ có thêm dấu “/”.</li>
+            <li>Tuy nhiên có một số loại thẻ đơn, tức là chỉ có thẻ bắt đầu.</li>
+            <li>HTML và trình duyệt không nhận biết được nhiều dấu cách. Trình duyệt cũng không nhận biết dấu xuống dòng khi người dùng nhấn phím Enter.</li>
+        </ul>
+    </div>
+
+    <h3>b) Phần tử HTML</h3>
+    <p>Các tệp HTML là tệp văn bản được cấu tạo từ các phần tử HTML. Mỗi phần tử HTML gồm nội dung được đánh dấu bởi các thẻ (HTML tag) có tính năng điều khiển hoặc định dạng nội dung. Trình duyệt có chức năng hiển thị nội dung trang web theo đúng định dạng được thiết lập.</p>
+
+    <h2>2. Cấu trúc cơ bản của một tệp HTML</h2>
+    <p>Cấu trúc cơ bản của HTML bao gồm:</p>
+    <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code>: Dòng này thông báo cho trình duyệt biết đây là tệp văn bản HTML.</li>
+        <li><code>&lt;html&gt;</code>: Phần tử gốc chứa toàn bộ nội dung HTML của trang web, bao gồm <code>&lt;head&gt;</code> và <code>&lt;body&gt;</code>.</li>
+        <li><code>&lt;head&gt;</code>: Chứa các thông tin chung cho trang web như <code>&lt;title&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;script&gt;</code>.</li>
+        <li><code>&lt;body&gt;</code>: Chứa nội dung hiển thị của trang web.</li>
+        <li><code>&lt;meta&gt;</code>: Dùng để mô tả các thông tin bổ sung như mã hoá, từ khoá, tác giả. Nằm trong <code>&lt;head&gt;</code>.</li>
+        <li><code>&lt;title&gt;</code>: Đặt tên cho trang web, xuất hiện trong kết quả tìm kiếm.</li>
+    </ul>
+
+    <h2>3. Phần mềm soạn thảo của HTML</h2>
+    <ul>
+        <li><strong>a)</strong> Phần mềm Notepad: là phần mềm soạn thảo văn bản đơn giản.</li>
+        <li><strong>b)</strong> Phần mềm soạn thảo HTML chuyên nghiệp nguồn mở:
+            <ul>
+                <li>Phần mềm Notepad++</li>
+                <li>Phần mềm Sublime Text</li>
+            </ul>
+        </li>
+        <li><strong>c)</strong> Sử dụng trang web hỗ trợ soạn thảo HTML trực tuyến: Yêu cầu máy tính có kết nối Internet và cài đặt trình duyệt chuẩn.</li>
+    </ul>
+
+    <h1>Bài 8: Định dạng văn bản</h1>
+
+    <h2>1. Thuộc tính thẻ</h2>
+    <p>Thẻ có thể có hoặc không có thuộc tính. Thuộc tính của thẻ có tác dụng bổ sung thông tin, làm rõ cách xử lý cho thẻ chứa nó.</p>
+
+    <h2>2. Các thẻ định dạng trình bày văn bản</h2>
+    <h3>a) Định dạng tiêu đề</h3>
+    <p>Sử dụng các thẻ dạng <code>&lt;hx&gt;</code> trong đó x nhận một trong các giá trị từ 1 đến 6 để phân cấp tiêu đề theo các mức khác nhau.</p>
+    <h3>b) Định dạng đoạn văn bản</h3>
+    <p>Các đoạn được định dạng bằng thẻ <code>&lt;p&gt;</code> phù hợp với văn bản chứa nhiều chữ.</p>
+    
+    <div class="note">
+        <p><strong>Lưu ý:</strong></p>
+        <ul>
+            <li>HTML không nhận biết kí tự xuống dòng để kết thúc đoạn văn bản như các phần mềm soạn thảo văn bản thông thường.</li>
+        </ul>
+    </div>
+
+    <h2>3. Các thẻ định dạng phông chữ</h2>
+    <h3>a) Định dạng kiểu chữ</h3>
+    <p>Lưu ý: HTML không hỗ trợ thẻ <code>&lt;big&gt;</code> và <code>&lt;u&gt;</code>.</p>
+
+    <h3>b) Định dạng phông chữ</h3>
+    <p>Để định dạng phông chữ, ta sử dụng thuộc tính <code>style</code>. Các thuộc tính màu sắc, phông chữ, cỡ chữ được xác định như sau:</p>
+    <ul>
+        <li>Màu sắc: <code>&lt;p style="color:màu"&gt;Nội dung.&lt;/p&gt;</code></li>
+        <li>Phông chữ: <code>&lt;p style="font-family: phông_chữ"&gt;Nội dung.&lt;/p&gt;</code></li>
+        <li>Cỡ chữ: <code>&lt;p style="font-size:cỡ"&gt;Nội dung.&lt;/p&gt;</code></li>
+    </ul>
+
+    <h1>Bài 9: Tạo danh sách, bảng</h1>
+
+    <h2>1. Tạo danh sách</h2>
+    <h3>a) Danh sách có hoặc không có thứ tự</h3>
+    <p>Để tạo danh sách có thứ tự, dùng cặp thẻ <code>&lt;ol&gt;&lt;/ol&gt;</code>. Để tạo danh sách không có thứ tự, dùng cặp thẻ <code>&lt;ul&gt;&lt;/ul&gt;</code>.</p>
+
+    <h2>2. Thiết lập bảng</h2>
+    <p>Thêm tiêu đề: Sử dụng thẻ <code>&lt;caption&gt;</code>, ngay sau thẻ <code>&lt;table&gt;</code> và trước thẻ <code>&lt;tr&gt;</code> đầu tiên.</p>
+
+    <div class="task">
+        <p><strong>Nhiệm vụ 2: Tạo bảng</strong></p>
+        <p>Tạo bảng với các thông số đã cho và lưu lại tập với tên <code>CLB.html</code</p>
+    </div>
+    <footer>
+        <a href="../htmll/hi.html" class="button">Luyện Tập Ngay</a>
+    </footer>
+    
+</body>
